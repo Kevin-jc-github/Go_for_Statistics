@@ -1,7 +1,13 @@
-# Go for Statistical Regression: Anscombe's Quartet
+# Go for Statistical Regression
 
 ## Overview
-This repository demonstrates how to calculate linear regression using Go. The dataset used for testing is Anscombe's Quartet, a famous example of four datasets that share the same statistical properties but are graphically distinct. The primary goal is to showcase the ability of Go to compute linear regression efficiently, and to compare its execution time and performance with languages like R and Python.
+Managers of a technology startup are keen on limiting the number of computer languages supported by the company. They would like software engineers and data scientists to work together using the same language for backend research and product development. In particular, they want to see employees using Go as their primary programming language.
+
+The managers know that Go will serve the company's needs for backend web and database servers. They know that Go is the right language for distributed service offerings on the cloud. But they are concerned that it may be difficult to convince data scientists to use Go rather than Python or R.
+
+The company's data scientists are concerned about the prospect of having to use Go for their work. At the very least, the data scientists want to ensure that the proposed Go statistics package will provide correct answers. Tests could examine Go linear regression results against results from Python and R. It is suggested that an initial test be run on four small datasets: The Anscombe Quartet as described by Anscombe (1973) and Miller (2015).
+
+The primary goal is to showcase the ability of Go to compute linear regression efficiently, and to compare its execution time and performance with languages like R and Python.
 
 ## Program Structure
 - **Main Program**: The main Go program calculates the slope and intercept for each of the four datasets in Anscombe's Quartet using linear regression.
@@ -29,7 +35,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Kevin-jc-github/Go_for_Statistics.git
-cd Go_for_stat
+cd Go_for_Statistics
 ```
 
 To run the main program and see the regression results:
@@ -83,7 +89,8 @@ Here are the results of the regression tests:
 
 As seen from the table, the results are very close to the expected values, and the time taken for each calculation is extremely low. The longest calculation takes 12.833 microseconds, while the shortest takes 83 nanoseconds.
 
-And the results for unit test is below:
+And the results for unit test is below:  
+
 ![alt text](image.png)
 
 ## Conclusion
